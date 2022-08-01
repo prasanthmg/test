@@ -1,4 +1,6 @@
 def f():
 	return 
 
-f()
+def test_f():
+	return 
+	
