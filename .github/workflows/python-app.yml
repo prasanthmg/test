@@ -43,3 +43,4 @@ jobs:
         repository: prasanthmg/test2
         path: '.'
     - run: pytest p2.py 
+    - run: pytest p.py
