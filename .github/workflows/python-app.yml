@@ -37,13 +37,13 @@ jobs:
         pytest p.py
     - run:
         pytest p2.py
-    - name: Install external repo
-      uses: actions/checkout@v3
-      with:
-        repository: prasanthmg/test2
-        path: 'testmodules'
-        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-    - run: |
-        cd testmodules
-        # pytest p5.py
-    - run: pytest p.py
+    # - name: Install external repo
+    #   uses: actions/checkout@v3
+    #   with:
+    #     repository: prasanthmg/test2
+    #     path: 'testmodules'
+    #     ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+    # - run: |
+    #     cd testmodules
+    #     # pytest p5.py
+    # - run: pytest p.py
