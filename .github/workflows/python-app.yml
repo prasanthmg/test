@@ -37,3 +37,9 @@ jobs:
         pytest p.py
     - run:
         pytest p2.py
+    - name: Install external repo
+      uses: actions/checkout@v3
+      with:
+        repository: test2
+        path: '.'
+    - run: pytest p3.py
