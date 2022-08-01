@@ -45,5 +45,5 @@ jobs:
         ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - run: |
         cd testmodules
-        # pytest p5.py
+        pytest p5.py
     - run: pytest p.py
