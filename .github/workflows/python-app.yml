@@ -44,5 +44,5 @@ jobs:
         path: 'testmodules'
     - run: |
         cd testmodules
-        pytest p2.py 
+        pytest p5.py 
     - run: pytest p.py
