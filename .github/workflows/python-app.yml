@@ -42,5 +42,7 @@ jobs:
       with:
         repository: prasanthmg/test2
         path: 'testmodules'
-    - run: pytest p2.py 
+    - run: |
+        cd testmodules
+        pytest p2.py 
     - run: pytest p.py
