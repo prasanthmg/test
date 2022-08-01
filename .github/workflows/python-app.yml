@@ -45,5 +45,4 @@ jobs:
     - run: |
         cd testmodules
         pytest p5.py
-        pytest p.py
     - run: pytest p.py
