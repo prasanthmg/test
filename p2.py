@@ -1,6 +1,5 @@
 def f():
 	return 
 
-def test_f():
+def test1_f():
 	return 
-	
