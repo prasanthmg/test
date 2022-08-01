@@ -42,6 +42,7 @@ jobs:
       with:
         repository: prasanthmg/test2
         path: 'testmodules'
+        ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
     - run: |
         cd testmodules
         pytest p5.py
