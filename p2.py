@@ -1,1 +1,4 @@
-return
+def f():
+	return 
+
+f()
