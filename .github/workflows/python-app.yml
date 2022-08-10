@@ -26,7 +26,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run:
-        pytest --config-env=dev --user-id=${{ secrets.user_id }}
+        pytest -v --config-env=dev --user-id=${{ secrets.user_id }}
     # - run:
     #     pytest p2.py
     # # - name: Install external repo
