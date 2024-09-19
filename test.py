@@ -4,7 +4,7 @@ d  = {
     'X': 10,
     'L': 50,
     'C': 100,
-    'D': 500
+    'D': 500,
 }
 
 RN = ['CLXXXIX', 'CD', 'XL', 'XIX']
@@ -33,4 +33,4 @@ for rn in RN:
     decimal += d[rn[-1]]
     temp_RN.append(decimal)
 RN = temp_RN
-print(RN)
+print(RN
