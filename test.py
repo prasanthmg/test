@@ -33,4 +33,4 @@ for rn in RN:
     decimal += d[rn[-1]]
     temp_RN.append(decimal)
 RN = temp_RN
-print(RN)
+print(RN
