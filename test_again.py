@@ -32,5 +32,10 @@ for rn in RN:
         i+=1
     decimal += d[rn[-1]]
     temp_RN.append(decimal)
+    while i < len(rn)-1:
+        if (d[rn[i]] < d[rn[i+1]]):
+            decimal -= d[rn[i]]
+        else:
+            decimal += d[rn[i]]
 RN = temp_RN
 print(RN)
