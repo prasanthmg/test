@@ -1,7 +1,5 @@
-def f():
-	print("i am here")
-	return 
+import requests
 
-def testicular():
-	print("iam here too")
-	return 
+def lambda_handler(event, context):
+	print(event)
+	print("hey there....")
