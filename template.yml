@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+
+Resources:
+  HelloWorldAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      Name: Hello World API
+      StageName: Prod
+  HelloWorldFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      PackageType: Image
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            RestApiId: !Ref HelloWorldAPI
+            Path: /hello
+            Method: get
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
