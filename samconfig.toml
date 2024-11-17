@@ -1,7 +1,7 @@
 version=0.1
 
 [prod.deploy.parameters]
-stack_name = "prasanth-test4"
+stack_name = "prasanth-test6"
 resolve_s3 = true
 resolve_image_repos = true
 capabilities = ["CAPABILITY_IAM", "CAPABILITY_NAMED_IAM"]

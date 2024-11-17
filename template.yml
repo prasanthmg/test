@@ -10,6 +10,9 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function 
     Properties:
+      Environment:
+        Variables:
+          secret:
       PackageType: Image
       Events:
         HelloWorld:
@@ -20,4 +23,4 @@ Resources:
             Method: get
     Metadata:
       Dockerfile: Dockerfile
-      DockerContext: .
+      DockerContext: lambda_functions/code
