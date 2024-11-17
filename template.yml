@@ -12,7 +12,7 @@ Resources:
     Properties:
       Environment:
         Variables:
-          secret:
+          secret: ''
       PackageType: Image
       Events:
         HelloWorld:
